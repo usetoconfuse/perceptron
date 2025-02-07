@@ -13,14 +13,15 @@ int main() {
     double w0 = 0, w1 = 0, w2 = 0;
     int epoch = -1; // Increment from -1 as we have to loop an extra time to confirm stability
     int stable = 0;
+    int sampleSize = sizeof(samples)/sizeof(*samples);
 
     while (!stable) // Loop until convergence
     {
         stable = 1;
-        for (int i=0; i<6; i++)
+        for (int i=0; i<sampleSize; i++)
         {
-            double* pt = samples[i];
-            double sum = w0 + w1 * pt[0] + w2 * pt[1];
+            const double* pt = samples[i];
+            const double sum = w0 + w1 * pt[0] + w2 * pt[1];
             if (sum * pt[2] <= 0) // Adjust weights if incorrectly classified
             {
                 stable = 0;
