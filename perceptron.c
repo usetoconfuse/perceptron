@@ -29,9 +29,6 @@ int main() {
     // Iterate over data samples
 
     while (!stable)
-    const int sampleSize = sizeof(samples)/sizeof(*samples);
-
-    while (!stable) // Loop until convergence
     {
         stable = 1;
         epoch++;
@@ -54,7 +51,6 @@ int main() {
                 }
             }
         }
-        epoch++;
     }
 
     printf("w[0]: %.2f\nw[1]: %.2f\nw[2]: %.2f\nw[3]: %.2f\n"
