@@ -35,7 +35,7 @@ with the calculated weights $`w_0, \ldots, w_{n-1}`$ in $`W`$.
 
 ## Standard
 
-Starting values for all weights in $W$ are $0$ to begin with.
+Starting values for all weights in $W$ are $0$.
 
 The standard perceptron iterates over $`T`$ in order, classifying each $`I_x`$ as $`H(w_x)`$.
 
