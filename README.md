@@ -35,6 +35,8 @@ with the calculated weights $`w_0, \ldots, w_{n-1}`$ in $`W`$.
 
 ## Standard
 
+Starting values for all weights in $W$ are $0$ to begin with.
+
 The standard perceptron iterates over $`T`$ in order, classifying each $`I_x`$ as $`H(w_x)`$.
 
 If a point is incorrectly classified, i.e., $`H(w_x) \neq C`$, then the perceptron adjusts W
@@ -48,6 +50,8 @@ The perceptron continues to iterate until it completes an iteration over $`T`$ w
 Upon completion, the program will output the number of epochs this took.
 
 ## Adaline
+
+Starting values for all weights in $W$ are randomised between $0$ and $1$ inclusive.
 
 When selecting the Adaline perceptron, you will be prompted to input a learning parameter $`\rho`$ and a limit value.
 
