@@ -4,7 +4,7 @@ This algorithm takes a training set $`T = \{x_0, x_1, \ldots, x_i\}`$ of $`m`$ t
 correctly classify all input vectors $`I`$ with respect to some binary class. ($`T`$ is currently hard-coded)
 
 Each $`n`$-dimensional vector $`x`$ contains the input vector $`I`$ with $`n-1`$ features followed by the correct
-classification of the data $`C`$.
+classification of the data $`C \in \{1, -1\}`$.
 
 
 That is, for all $`x`$:
