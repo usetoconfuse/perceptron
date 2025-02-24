@@ -24,7 +24,7 @@ That is, for all $`x`$:
 
 
 Let $`w_k`$ be the $`k`$th weight in $`W`$ and let $`I_x`$ be the input vector contained in $`x`$.\
-As the perceptron assigns one weight for each feature (including the bias), $`|W| = n-1`$.
+As the perceptron assigns one weight for each feature (including the bias), $`\lVert W \rVert = n-1`$.
 
 The perceptron calculates the weighted sum $`w_x`$ of a given $`x`$ using the formula
 
