@@ -40,7 +40,7 @@ int main() {
         errno = 0;
         lrnParam = strtod(lrnBuf, NULL);
         if (lrnParam > 0 && errno != ERANGE) break;
-        puts ("Error: invalid input");
+        puts("Error: invalid input");
     }
 
     // Limit of iterations over T
